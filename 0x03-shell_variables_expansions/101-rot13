@@ -1,2 +1,2 @@
 #!/bin/bash
-cat -n | cut -c6- | grep -vP "[02468]\t" | cut -f2
+tr `echo {a..z} | tr -d ' '` `echo {n..z} $(echo {a..m} | tr -d ' '` | tr `echo {A..Z} | tr -d ' '` `echo {N..Z} $(echo {A..M}) | tr -d ' '`
